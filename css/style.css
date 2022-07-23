@@ -218,6 +218,10 @@ p {
     margin-top: 0;
 }
 
+h3 {
+    font-weight: normal;
+}
+
 @keyframes rotate_image {
     0% {
         ransform: rotate(0deg);
