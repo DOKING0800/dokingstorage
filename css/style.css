@@ -1,17 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
-@font-face {
-    font-family: "Foundation-Titles-Hand";
-    src: url("../font/FoundationTitlesHand-v0.85.ttf");
-}
-
-@font-face {
-    font-family: "Foundation-Titles-Hand-SemiBold";
-    src: url("../font/FoundationTitlesHand-SemiBold-v0.85.ttf");
-}
-
-html, body, .body {
+html,
+body,
+.body {
     height: 100%;
     width: 100%;
     margin: 0;
@@ -25,7 +17,7 @@ html, body, .body {
     flex-direction: column;
     align-items: center;
     background-color: #2E2E2E;
-    font-family: 'Inter', sans-serif;
+    font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
 }
 
 header {
@@ -46,9 +38,9 @@ main {
     flex-direction: column;
 }
 
-.title > h1 {
+.title>h1 {
     margin: 0;
-    font-family: 'Foundation-Titles-Hand', sans-serif;
+    font-family: 'Foundation-Titles-Hand-SemiBold', sans-serif;
 }
 
 .link-container {
@@ -80,7 +72,7 @@ main {
     background-color: #fff;
 }
 
-.profile > img {
+.profile>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -92,7 +84,6 @@ main {
 
 .card {
     display: flex;
-    font-family: 'Foundation-Titles-Hand-SemiBold', sans-serif;
 }
 
 .profile-container {
@@ -107,12 +98,21 @@ main {
     flex-direction: column;
 }
 
-.info > div:nth-child(1) {
-    flex: 2;
+.info>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.info > div:nth-child(2) {
+.info>div:nth-child(1) {
+    flex: 2;
+    justify-content: flex-end;
+}
+
+.info>div:nth-child(2) {
     flex: 3;
+    justify-content: flex-start;
 }
 
 .info h3 {
@@ -146,7 +146,7 @@ main {
     overflow: hidden;
 }
 
-.link > img {
+.link>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -193,22 +193,18 @@ li.link:hover {
     color: #fff;
 }
 
-main > div {
+main>div {
     width: 80%;
     height: 80%;
     background-color: #2f3136;
     border: 1px solid #202225;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px #fff;
+    box-shadow: 0px 0px 10px #fad9ee;
     max-width: 800px;
     color: #fff;
     text-align: center;
     justify-content: center;
     align-items: center;
-}
-
-b {
-    font-family: 'Foundation-Titles-Hand', sans-serif;
 }
 
 span {
@@ -217,58 +213,66 @@ span {
     font-size: 0.8rem;
 }
 
-.point {
-    color: #721125;
+p {
+    font-size: 1.1rem;
+    margin-top: 0;
 }
 
-.hidden
-{
-    display: none;
-}
-
-/* ======================================================= */
-
-@keyframes rotate_image{
-	0% {
-    	ransform: rotate(0deg);
+@keyframes rotate_image {
+    0% {
+        ransform: rotate(0deg);
     }
 
     50% {
-    	transform: rotate(400deg);
+        transform: rotate(400deg);
     }
 
     70% {
-    	transform: rotate(340deg);
+        transform: rotate(340deg);
     }
 
     90% {
-    	transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 
     100% {
-    	transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
 @keyframes rainbowShadow {
-    0% { box-shadow: 0px 0px 70px #ff0000; }
-    15% { box-shadow: 0px 0px 70px #ff8c00; }
-    30% { box-shadow: 0px 0px 70px #ffff00; }
-    45% { box-shadow: 0px 0px 70px #008000; }
-    60% { box-shadow: 0px 0px 70px #0000ff; }
-    75% { box-shadow: 0px 0px 70px #4b0082; }
-    90% { box-shadow: 0px 0px 70px #800080; }
-    100% { box-shadow: 0px 0px 70px #7700ff; }
+    0% {
+        box-shadow: 0px 0px 70px #ff0000;
+    }
+
+    15% {
+        box-shadow: 0px 0px 70px #ff8c00;
+    }
+
+    30% {
+        box-shadow: 0px 0px 70px #ffff00;
+    }
+
+    45% {
+        box-shadow: 0px 0px 70px #008000;
+    }
+
+    60% {
+        box-shadow: 0px 0px 70px #0000ff;
+    }
+
+    75% {
+        box-shadow: 0px 0px 70px #4b0082;
+    }
+
+    90% {
+        box-shadow: 0px 0px 70px #800080;
+    }
+
+    100% {
+        box-shadow: 0px 0px 70px #7700ff;
+    }
 }
-
-/* 
-    animation-name: rainbowBorder;
-    animation-duration: 1000ms;
-    animation-iteration-count: infinite;
-*/
-
-
-/* ======================================================= */
 
 @media screen and (max-width: 600px) {
     .profile {
@@ -286,17 +290,17 @@ span {
         height: 100px;
     }
 
-    .info > div:nth-child(1) {
+    .info>div:nth-child(1) {
         flex: 1;
     }
-    
-    .info > div:nth-child(2) {
+
+    .info>div:nth-child(2) {
         flex: 4;
     }
 }
 
 @media screen and (max-width: 400px) {
-    .card > .profile-container {
+    .card>.profile-container {
         display: none;
     }
 
@@ -309,9 +313,8 @@ span {
         border-radius: 0;
         box-shadow: none;
     }
-    .title > h1 {
+
+    .title>h1 {
         display: none;
     }
 }
-
-/* ======================================================= */
