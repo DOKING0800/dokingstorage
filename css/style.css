@@ -106,12 +106,12 @@ main {
 }
 
 .info>div:nth-child(1) {
-    flex: 2;
+    flex: 3;
     justify-content: flex-end;
 }
 
 .info>div:nth-child(2) {
-    flex: 3;
+    flex: 5;
     justify-content: flex-start;
 }
 
